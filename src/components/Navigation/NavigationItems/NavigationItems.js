@@ -8,6 +8,7 @@ const navigationItems = (props) =>{
         <ul className={classes.NavigationItems}>
         <NavigationItem link='/' active>Burger Builder</NavigationItem>
         <NavigationItem link='/'>Checkout</NavigationItem>
+        <div className={classes.NavigationItem} onClick={props.showHistory}>Order History</div>
         </ul>
     )
 };

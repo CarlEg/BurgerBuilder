@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Aux from '../../hoc/Aux';
+import Aux from '../../hoc/Aux/Aux';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls'
 import Modal from '../../components/UI/Modal/Modal';
@@ -10,13 +10,15 @@ const INGREDIENT_PRICES ={
     salad: 0.5,
     cheese: 0.4,
     meat: 1.3,
-    bacon: 0.7
+    bacon: 0.7,
+    tomato: 0.6,
 }
 
 class BurgerBuilder extends Component{
     state={
         ingredients:{
             salad: 0,
+            tomato: 0,
             bacon: 0,
             cheese:0,
             meat: 0,
@@ -84,7 +86,7 @@ class BurgerBuilder extends Component{
     }
 
     purchaseContineHandler = () =>{
-        alert('You continue!');
+        alert('Burger ordered!');
     }
 
     purchaseCancelHandler = () =>{

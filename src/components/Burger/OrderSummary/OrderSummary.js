@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Aux from '../../../hoc/Aux';
+import Aux from '../../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component{
@@ -28,7 +28,7 @@ class OrderSummary extends Component{
                 <h4>Price: £{this.props.price.toFixed(2)}</h4>
                 <p>Continue to checkout?</p>
                 <Button btnType='Danger' clicked={this.props.cancel}>CANCEL</Button>
-                <Button btnType='Success' clicked={this.props.continue}>CONTINUE</Button>
+                <Button btnType='Success' clicked={this.props.continue}>ORDER</Button>
             </Aux>
         )
     }
